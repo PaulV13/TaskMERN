@@ -1,0 +1,50 @@
+.todo {
+  height: 80px;
+  background: #FAE5D3;
+  font-size: 24px;
+  color: black;
+  cursor: pointer;
+  display: flex;
+  transition: all 1s ease;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  align-items: center;
+  padding: 10px;
+}
+
+.todo-item {
+  flex: 1 1;
+  width: 200px;
+  overflow: hidden;
+  padding-left: 8px;
+  padding-right: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.trash-btn {
+  font-size: 20px;
+  height: 25px;
+  width: 25px;
+  background: transparent;
+  color: #f56217;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+
+.fa-trash {
+  pointer-events: none;
+}
+
+.fall {
+  opacity: 0;
+}
+
+
+@media screen and (max-width: 600px) {
+  .todo{
+    height: 40px;
+  }
+}

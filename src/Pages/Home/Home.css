@@ -1,0 +1,56 @@
+.container-home{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header_tarea{
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.header_tarea h2{
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.add-note{
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.add-button{
+  color: #f56217;
+  background: #f7fffe;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 61.53px - 56px - 49px);
+  padding-right: 20px;
+}
+
+.form-content{
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .content{
+    flex-direction: column;
+  }
+}

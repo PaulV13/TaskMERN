@@ -1,0 +1,111 @@
+@import url('https://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,300,700');
+
+.form-input-register {
+  border: 0;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+.user-register:before {
+  content: '\f007';
+  font: 14px fontawesome;
+	color: #5b5b5b;
+}
+
+.hidden-register {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.lock-register:before {
+  content: '\f023';
+  font: 14px fontawesome;
+	color: #5b5b5b;
+}
+
+.email-register:before{
+  content: '\f1fa';
+  font: 14px fontawesome;
+  color: #5b5b5b;
+}
+
+.form-register label,
+.form-register input[type="text"],
+.form-register input[type="email"],
+.form-register input[type="password"],
+.form-register button[type="submit"] {
+  border-radius: 0.25rem;
+  padding: 1rem;
+  color: #3A3F44;  
+}
+
+.form-register label {
+  background-color: #222222;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.form-register{
+  padding: 50px;
+  background: #0F2027;
+  border-radius: 8px;
+}
+
+.form-register input[type="text"],.form-register input[type="email"], .form-register input[type="password"] {
+  background-color: #ffffff;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.form-register input[type="text"]:focus, .form-register input[type="text"]:hover,.form-register input[type="email"]:focus, .form-register input[type="email"]:hover, .form-register input[type="password"]:focus, .form-register input[type="password"]:hover {
+  background-color: #eeeeee;
+}
+
+.form-register button[type="submit"] {
+  width: 100%;
+  background-color: transparent;
+  color: #f56217;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border: 2px solid #f56217;
+  border-radius: 3px;
+  box-shadow: rgb(0, 0, 0) 1px 1px 10px -1px;
+}
+.form-register button[type="submit"]:focus, .form-register button[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #2C5364;
+}
+.form-field-register {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.errorRegister{
+  margin-bottom: 2rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: red;
+  font-size: 18px;
+}

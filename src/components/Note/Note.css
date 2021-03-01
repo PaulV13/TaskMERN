@@ -1,0 +1,47 @@
+.form-tarea {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  background-color: transparent;
+  margin-left: 20px;
+}
+
+.todo-input{ 
+  resize: none;
+  height: 100%;
+  padding: 10px;
+}
+
+.form-info{
+  display: flex;
+  justify-content: space-between;
+}
+
+.errorTarea {
+  display: flex;
+    text-align: center;
+    color: red;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.todo-button {
+  color: #f56217;
+  background: #f7fffe;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.todo-button i{
+  font-size: 24px;
+}
+
+.button{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

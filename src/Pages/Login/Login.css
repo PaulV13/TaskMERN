@@ -1,0 +1,118 @@
+@import url('https://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,300,700');
+.google-button{
+  width: 100%;
+  justify-content: center;
+}
+
+.form-input-login {
+  border: 0;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+.user-login:before {
+  content: '\f007';
+  font: 14px fontawesome;
+	color: #5b5b5b;
+}
+
+.email-login:before{
+  content: "\f1fa";
+  font: 14px fontawesome;
+  color: #5b5b5b;
+}
+
+.hidden-login {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.lock-login:before {
+  content: '\f023';
+  font: 14px fontawesome;
+	color: #5b5b5b;
+}
+
+.form-login label,
+.form-login input[type="text"],
+.form-login input[type="password"],
+.form-login button[type="submit"] {
+  border-radius: 0.25rem;
+  padding: 1rem;
+  color: #3A3F44;  
+}
+
+.form-login label {
+  background-color: #222222;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.form-login{
+  display: flex;
+  padding: 30px;
+  background: #0F2027;
+  border-radius: 8px;
+  flex-direction: column;
+}
+
+.form-login input[type="text"], .form-login input[type="password"] {
+  background-color: #ffffff;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.form-login input[type="text"]:focus, .form-login input[type="text"]:hover, .form-login input[type="password"]:focus, .form-login input[type="password"]:hover {
+  background-color: #eeeeee;
+}
+
+.form-login button[type="submit"] {
+  width: 100%;
+  background-color: transparent;
+  color: #f56217;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border: 2px solid #f56217;
+  border-radius: 3px;
+  box-shadow: rgb(0, 0, 0) 1px 1px 10px -1px;
+}
+
+.form-login button[type="submit"]:focus, .form-login button[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #2C5364;
+}
+
+.form-field-login {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem 0;
+}
+
+.errorLogin{
+  margin-bottom: 2rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: red;
+  font-size: 18px;
+}

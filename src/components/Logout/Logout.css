@@ -1,0 +1,37 @@
+.form-logout{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.form-logout button[type="text"]:focus, .form-logout button[type="text"]:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.form-logout .logout[type="text"] {
+  background-color: transparent;
+  color: #f56217;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border: 2px solid #f56217;
+  border-radius: 3px;
+  box-shadow: rgb(0, 0, 0) 1px 1px 10px -1px;
+}
+
+.form-logout-field{
+  margin-bottom: 0px;
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-logout h4{
+  margin-right: 10px;
+}
