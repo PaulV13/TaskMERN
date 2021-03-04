@@ -1,41 +1,34 @@
-import React, { useCallback, useContext, useEffect, useState } from 'react'
-import { useLocation } from 'wouter'
-import { useLogin } from '../../hooks/useLogin'
-import TareaContext from '../../context/TareaContext'
-import TodoList from '../../components/TodoList/TodoList'
-import Note from '../../components/Note/Note'
-import Logout from '../../components/Logout/Logout'
+import React, { useCallback, useContext, useEffect, useState } from "react";
+import { useLocation } from "wouter";
+import { useLogin } from "../../hooks/useLogin";
+import TareaContext from "../../context/TareaContext";
+import TodoList from "../../components/TodoList/TodoList";
+import Note from "../../components/Note/Note";
+import Logout from "../../components/Logout/Logout";
 
-import "./Home.css"
+import "./Home.css";
 
 export default function Home() {
-
-  const [, setLocation] = useLocation()
-  const { setJWT } = useLogin()
-  const { setNombreTarea, setEdit, nombreTarea } = useContext(TareaContext)
-  const [show, setShow] = useState(false)
+  const [, setLocation] = useLocation();
+  const { setJWT } = useLogin();
+  const { setNombreTarea, setEdit, nombreTarea } = useContext(TareaContext);
+  const [show, setShow] = useState(false);
 
   useEffect(
     useCallback(() => {
-      if (localStorage.getItem('token') === null) {
-        setLocation('/')
-      } else {
-        setJWT(localStorage.getItem('token'))
-      }
+      localStorage.getItem("token") === null
+        ? setLocation("/")
+        : setJWT(localStorage.getItem("token"));
     }, [setLocation, setJWT]),
     [setLocation]
-  )
+  );
 
   const handleAddNote = () => {
-    if (nombreTarea !== '') {
-      setShow(true)
-    }
-    else { 
-      setShow(!show)
-    }
-    setNombreTarea('')
-    setEdit(false)
-  }
+    nombreTarea !== "" ? setShow(true) : setShow(!show);
+
+    setNombreTarea("");
+    setEdit(false);
+  };
 
   return (
     <div className="container-home">
@@ -60,5 +53,5 @@ export default function Home() {
         </div>
       </div>
     </div>
-  )
+  );
 }
