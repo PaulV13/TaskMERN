@@ -26,12 +26,17 @@ export function useLogin() {
     })
       .then((res) => res.json())
       .then((data) => {
-        const token = data.data.token;
-        data.error !== null ? setErrorLogin(data.message) : setJWT(token);
+        console.log(data);
 
-        localStorage.setItem("name", data.name);
-        localStorage.setItem("id", data.id);
-        localStorage.setItem("token", token);
+        data.error ? setErrorLogin(data.message) : setJWT(data.data.token);
+
+        if (data.error == null) {
+          const token = data.data.token;
+
+          localStorage.setItem("name", data.name);
+          localStorage.setItem("id", data.id);
+          localStorage.setItem("token", token);
+        }
       })
       .catch((err) => console.log(err));
   };
