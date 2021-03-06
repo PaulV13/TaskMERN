@@ -26,8 +26,6 @@ export function useLogin() {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
-
         data.error ? setErrorLogin(data.message) : setJWT(data.data.token);
 
         if (data.error == null) {
