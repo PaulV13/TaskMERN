@@ -22,6 +22,7 @@ export function useRegister() {
 
   const submitHandler = (e) => {
     e.preventDefault();
+    setErrorRegister("");
     fetch("https://api-tareas-mern.herokuapp.com/api/usuarios/registrar", {
       method: "POST",
       body: JSON.stringify({ name: nombre, email: email, password: password }),
@@ -34,7 +35,6 @@ export function useRegister() {
         data.error !== null
           ? setErrorRegister(data.error)
           : setMessage(data.message);
-        setErrorRegister("");
       })
       .catch((err) => console.log(err));
   };
